@@ -37,8 +37,14 @@ const fetchPokemonData = async (pokemonName) => {
     console.log(`Altura: ${pokemon.height}`);
     console.log(`Habilidades: ${pokemon.abilities.length}`);
     console.log(chalk.blue('-----------------------------------------\n'));
-  } catch (error) {
-    console.error(chalk.red(`Erro ao buscar dados do Pokémon "${pokemonName}":`), error.message);
+  } catch (error) { 
+    
+    //parte 4
+    if (error.response && error.response.status === 404) {
+      console.log(chalk.red('Pokémon não encontrado. Verifique o nome e tente novamente.'));
+    } else {
+      console.error(chalk.red(`Erro ao buscar dados do Pokémon "${pokemonName}":`), error.message);
+    }
   }
 };
 
