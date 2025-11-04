@@ -2,12 +2,16 @@ const http = require('http');
 const os = require('os');
 
 console.log('Bem-vindo Felipe');
-
 console.log('--- Informações do Sistema ---');
 console.log(`Sistema Operacional: ${os.type()}`);
 console.log(`Memória Total: ${(os.totalmem() / 1024 / 1024 / 1024).toFixed(2)} GB`);
 console.log(`Tempo de Atividade: ${(os.uptime() / 3600).toFixed(2)} horas`);
 console.log('----------------------------');
+console.log(chalk.green('Mensagem de sucesso!'));
+console.log(chalk.red('Mensagem de erro!'));
+console.log(chalk.blue('Mensagem informativa!'));
+console.log(chalk.nonExistentMethod('Esta linha vai causar um erro.'));
+
 
 // Parte 1 - Item 3
 const server = http.createServer((req, res) => {
