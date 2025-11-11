@@ -23,7 +23,11 @@ Este repositório contém uma coleção de exercícios para praticar Node.js, ex
 ## Estrutura Proposta do Projeto
 
 ```
-Mais tarde vou inserir isto
+.
+├── index.js
+├── package-lock.json
+├── package.json
+└── README.md
 
 ```
 

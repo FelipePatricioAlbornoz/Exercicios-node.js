@@ -1,1 +1,0 @@
-Achei que o codigo seria executado normalmente, mas algumas coisas não apareciam no console e eu não sabia por que.  Tambem fiquei confuso com os erros, porque quando a API falhou, eu não entendi a mensagem e levei um tempo para perceber que precisava usar blocos try/catch.  
